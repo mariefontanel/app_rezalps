@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AppRegistry, Text, View, Image } from 'react-native';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+class Greeting extends Component {
+    render() {
+        return (
+            <Text>Hello {this.props.name}!</Text>
+        );
+    }
 }
 
-export default App;
+export default class LotsOfGreetings extends Component {
+    render() {
+        return (
+            <View style={{alignItems: 'center'}}>
+                <Greeting name='Rexxar' />
+                <Greeting name='Jaina' />
+                <Greeting name='Valeera' />
+               <text>evfkjdhfkjidh</text>
+            </View>
+        );
+    }
+}

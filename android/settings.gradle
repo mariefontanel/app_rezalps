@@ -1,0 +1,3 @@
+rootProject.name = 'app_rezalps'
+
+include ':app'
