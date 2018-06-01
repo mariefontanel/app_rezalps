@@ -1,18 +1,20 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ *
  */
-
 import React, { Component } from 'react';
+import Header from './src/header';
 import {
     Platform,
     StyleSheet,
     Text,
     Image,
     ScrollView,
-    View
+    View,
+
+
 } from 'react-native';
+
+
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -21,53 +23,58 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component {
     render() {
-        let pic = {
-            uri: 'https://media.licdn.com/dms/image/C4D03AQHYTxeg-1rAcw/profile-displayphoto-shrink_200_200/0?e=1528794000&v=beta&t=nfvS1b_gO8mKezmUe8E-95GEgBl-v-fmUSa4zYYUyWo'
-        };
+
         return (
-            <ScrollView>
-                <View style={styles.container}>
-                    <Text style={styles.welcome}>
-                        Welcome to Rezalps!
-                    </Text>
-                    <Text style={styles.instructions}>
-                        To get started, register !
-                    </Text>
+            <View style={styles.container}>
+                {/*header importé*/}
+                <Header />
+
+                <View style={{flex: 1, flexDirection: 'row', justifyContent:'space-around', marginTop: 5, marginBottom: 5,}}>
+                    <Image source={require('./public/img/social_work.png')} style={styles.imgIntro} />
+                    <Image source={require('./public/img/recrutement.png')} style={styles.imgIntro} />
+                    <Image source={require('./public/img/link.png')} style={styles.imgIntro} />
+                </View>
+                <View style={{flex: 2, flexDirection: 'row', justifyContent:'space-around', marginTop: 5, marginBottom: 5,}}>
+                    <text>partage</text>
+                    <text>recrutement</text>
+                    <text>lien</text>
                 </View>
 
-                <Image source={pic} style={styles.avatars}/>
-                <Image source={pic} style={styles.avatars}/>
-                <Image source={pic} style={styles.avatars}/>
-                <Image source={pic} style={styles.avatars}/>
-                <Image source={pic} style={styles.avatars}/>
-            </ScrollView>
-
-        );
+                <ScrollView>
+                    <Text style={styles.postsIndex}>
+                        Welcome to Rezalps!
+                    </Text>
+                </ScrollView>
+            </View>
+    )
     }
-}
+    }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+
+    const styles = StyleSheet.create({
+
+        container: {
         backgroundColor: '#F5FCFF',
     },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
+        intro: {
+
+        flexDirection: 'row',
     },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
+        imgIntro: {
+        height: 50,
+        width: 50,
+    },
+
+        postsIndex: {
+        backgroundColor: 'blue',
         marginBottom: 5,
+        height: 150,
     },
-    avatars:{
+        avatars:{
         width: 193,
         height: 210,
     },
-});
+    });
