@@ -13,7 +13,7 @@ import {
 const Header = () =>(
 
     <View style={styles.container}>
-        <Image source={require('../../public/img/logo-texte-cote-web.png')} style={styles.logo} />
+        <Image source={require('../assets/img/logo-texte-cote-web.png')} style={styles.logo} />
     </View>
 );
 
