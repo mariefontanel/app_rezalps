@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
-import Header from '../../components/header';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { createStackNavigator } from 'react-navigation';
 import Test from "../../screens/Test";
 import {
     Platform,
@@ -11,8 +9,7 @@ import {
     Image,
     ScrollView,
     View,
-    Button,
-    Navigator
+    Button
 
 } from 'react-native';
 import {InputLogin} from "../../components/Login";
@@ -23,8 +20,6 @@ export default class HomeScreen extends Component {
 
             <View style={{flex:1}}>
 
-                <Header />
-
                 <KeyboardAwareScrollView //To keep the input on top of the keyboard, not hidden.
                     resetScrollToCoords={{ x: 0, y: 0 }}
                     contentContainerStyle={styles.container}
@@ -33,14 +28,14 @@ export default class HomeScreen extends Component {
 
                     <View style={{flex: 2, flexDirection: 'row', justifyContent:'space-around', marginTop: 5, marginBottom: 5,}}>
                         <Image source={require('../../assets/img/social_work.png')} style={styles.imgIntro} />
-                        <Image source={require('../../assets/img/recrutement.png')} style={styles.imgIntro} />
                         <Image source={require('../../assets/img/link.png')} style={styles.imgIntro} />
+                        <Image source={require('../../assets/img/recrutement.png')} style={styles.imgIntro} />
                     </View>
 
                     <View style={{flex: 3, flexDirection: 'row', justifyContent:'space-around', marginTop: 15, marginBottom: 7,}}>
                         <Text>Apprendre</Text>
-                        <Text>Recruter</Text>
                         <Text>Rencontrer</Text>
+                        <Text>Recruter</Text>
                     </View>
 
                     <View style={{flex: 4, flexDirection: 'row', marginTop: 5,}}>
@@ -60,7 +55,7 @@ export default class HomeScreen extends Component {
                             <Button
                                 style={{  }}
                                 onPress={() => {
-                                    navigate('Test', {screen: 'Test'});
+                                    navigate('Test');
                                 }}
                                 title="Inscription"
                                 color="#ea4c89"
