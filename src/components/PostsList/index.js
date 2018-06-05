@@ -14,7 +14,10 @@ export default class PostsList extends Component {
         return (
             <ScrollView style={{flexDirection: 'column'}}>
 
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
@@ -38,7 +41,10 @@ export default class PostsList extends Component {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
@@ -62,7 +68,10 @@ export default class PostsList extends Component {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
@@ -86,7 +95,10 @@ export default class PostsList extends Component {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
@@ -110,7 +122,10 @@ export default class PostsList extends Component {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
@@ -134,7 +149,10 @@ export default class PostsList extends Component {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
@@ -158,103 +176,10 @@ export default class PostsList extends Component {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.container}>
-
-                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
-                        <Image
-                            // Avatar de l'utilisateur lié au post'
-                            source={require('../../assets/img/default.png')}
-                            style={{ width: 30, height: 30, padding: 5}}
-                        />
-
-                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
-                            {/*Nom de l'utilisateur*/}
-                            Nom Prénom
-                        </Text>
-                    </TouchableOpacity>
-
-                    <View>
-                        <Text style={styles.post_box}>
-                            {/*Contenu du post*/}
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
-                        </Text>
-                    </View>
-
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.container}>
-
-                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
-                        <Image
-                            // Avatar de l'utilisateur lié au post'
-                            source={require('../../assets/img/default.png')}
-                            style={{ width: 30, height: 30, padding: 5}}
-                        />
-
-                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
-                            {/*Nom de l'utilisateur*/}
-                            Nom Prénom
-                        </Text>
-                    </TouchableOpacity>
-
-                    <View>
-                        <Text style={styles.post_box}>
-                            {/*Contenu du post*/}
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
-                        </Text>
-                    </View>
-
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.container}>
-
-                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
-                        <Image
-                            // Avatar de l'utilisateur lié au post'
-                            source={require('../../assets/img/default.png')}
-                            style={{ width: 30, height: 30, padding: 5}}
-                        />
-
-                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
-                            {/*Nom de l'utilisateur*/}
-                            Nom Prénom
-                        </Text>
-                    </TouchableOpacity>
-
-                    <View>
-                        <Text style={styles.post_box}>
-                            {/*Contenu du post*/}
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
-                        </Text>
-                    </View>
-
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.container}>
-
-                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
-                        <Image
-                            // Avatar de l'utilisateur lié au post'
-                            source={require('../../assets/img/default.png')}
-                            style={{ width: 30, height: 30, padding: 5}}
-                        />
-
-                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
-                            {/*Nom de l'utilisateur*/}
-                            Nom Prénom
-                        </Text>
-                    </TouchableOpacity>
-
-                    <View>
-                        <Text style={styles.post_box}>
-                            {/*Contenu du post*/}
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
-                        </Text>
-                    </View>
-
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.container}>
+                <TouchableOpacity style={styles.container}
+                                  onPress={() => {
+                                      this.props.navigation.navigate('Details');
+                                  }}>
 
                     <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
                         <Image
