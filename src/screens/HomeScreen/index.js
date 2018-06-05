@@ -9,9 +9,10 @@ import {
     Image,
     ScrollView,
     View,
-    Button
+    Button,
 
 } from 'react-native';
+
 import {InputLogin} from "../../components/Login";
 
 export default class HomeScreen extends Component {
@@ -55,7 +56,7 @@ export default class HomeScreen extends Component {
                             <Button
                                 style={{  }}
                                 onPress={() => {
-                                    navigate('Test');
+                                   this.props.navigation.navigate('Test');
                                 }}
                                 title="Inscription"
                                 color="#ea4c89"
