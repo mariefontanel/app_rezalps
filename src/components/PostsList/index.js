@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 
-export class PostsList extends Component {
+export default class PostsList extends Component {
     render() {
         return (
             <ScrollView style={{flexDirection: 'column'}}>
@@ -20,7 +20,7 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
@@ -44,7 +44,7 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
@@ -68,7 +68,7 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
@@ -92,7 +92,7 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
@@ -116,7 +116,7 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
@@ -140,7 +140,7 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
@@ -164,7 +164,103 @@ export class PostsList extends Component {
                         <Image
                             // Avatar de l'utilisateur lié au post'
                             source={require('../../assets/img/default.png')}
-                            style={{flex: 1, width: 10, height: 30, padding: 5}}
+                            style={{ width: 30, height: 30, padding: 5}}
+                        />
+
+                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
+                            {/*Nom de l'utilisateur*/}
+                            Nom Prénom
+                        </Text>
+                    </TouchableOpacity>
+
+                    <View>
+                        <Text style={styles.post_box}>
+                            {/*Contenu du post*/}
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
+                        </Text>
+                    </View>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.container}>
+
+                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
+                        <Image
+                            // Avatar de l'utilisateur lié au post'
+                            source={require('../../assets/img/default.png')}
+                            style={{ width: 30, height: 30, padding: 5}}
+                        />
+
+                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
+                            {/*Nom de l'utilisateur*/}
+                            Nom Prénom
+                        </Text>
+                    </TouchableOpacity>
+
+                    <View>
+                        <Text style={styles.post_box}>
+                            {/*Contenu du post*/}
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
+                        </Text>
+                    </View>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.container}>
+
+                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
+                        <Image
+                            // Avatar de l'utilisateur lié au post'
+                            source={require('../../assets/img/default.png')}
+                            style={{ width: 30, height: 30, padding: 5}}
+                        />
+
+                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
+                            {/*Nom de l'utilisateur*/}
+                            Nom Prénom
+                        </Text>
+                    </TouchableOpacity>
+
+                    <View>
+                        <Text style={styles.post_box}>
+                            {/*Contenu du post*/}
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
+                        </Text>
+                    </View>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.container}>
+
+                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
+                        <Image
+                            // Avatar de l'utilisateur lié au post'
+                            source={require('../../assets/img/default.png')}
+                            style={{ width: 30, height: 30, padding: 5}}
+                        />
+
+                        <Text style={{flex: 3, fontSize: 12, padding: 5}}>
+                            {/*Nom de l'utilisateur*/}
+                            Nom Prénom
+                        </Text>
+                    </TouchableOpacity>
+
+                    <View>
+                        <Text style={styles.post_box}>
+                            {/*Contenu du post*/}
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi deleniti dolores doloribus, earum excepturi fugiat iure libero molestiae nesciunt nihil nisi nobis, pariatur quam saepe voluptatem! Accusantium, itaque.
+                        </Text>
+                    </View>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.container}>
+
+                    <TouchableOpacity style={{flexDirection: 'row', padding: 5}}>
+                        <Image
+                            // Avatar de l'utilisateur lié au post'
+                            source={require('../../assets/img/default.png')}
+                            style={{ width: 30, height: 30, padding: 5}}
                         />
 
                         <Text style={{flex: 3, fontSize: 12, padding: 5}}>
