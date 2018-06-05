@@ -56,7 +56,7 @@ export default class HomeScreen extends Component {
                             <Button
                                 style={{  }}
                                 onPress={() => {
-                                   this.props.navigation.navigate('Test');
+                                   this.props.navigation.navigate('Flux');
                                 }}
                                 title="Inscription"
                                 color="#ea4c89"
@@ -68,7 +68,7 @@ export default class HomeScreen extends Component {
                         <Button
                             style= {styles.button}
                             onPress={() => {
-                                this.props.navigation.navigate('Test');
+                                this.props.navigation.navigate('Flux');
                             }}
                             title="Login"
                             color="#ea4c89"
